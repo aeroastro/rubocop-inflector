@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/rubocop-inflector.svg)](https://badge.fury.io/rb/rubocop-inflector)
+[![Build Status](https://travis-ci.com/aeroastro/rubocop-inflector.svg?branch=master)](https://travis-ci.com/aeroastro/rubocop-inflector)
 
 # RuboCop::Inflector
 
