@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/rubocop-inflector.svg)](https://badge.fury.io/rb/rubocop-inflector)
+
 # RuboCop::Inflector
 
 RuboCop extension to integrate ActiveSupport::Inflector and your custom rule.
