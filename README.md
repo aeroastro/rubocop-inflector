@@ -7,6 +7,30 @@ RuboCop extension to integrate ActiveSupport::Inflector and your custom rule.
 
 This saves you from writing redundant `CustomTransform` and keep the concise and consistent rule over your project.
 
+## Before Rubocop::Inflector
+
+For example, `CustomTransform` config is exact-match, which results in redundant definitions.
+
+```yaml
+RSpec/FilePath:
+  CustomTransform:
+    PvP: pvp
+    SyncPvP: sync_pvp
+    AsyncPvP: async_pvp
+    PvPOverPvP: pvp_over_pvp
+    PvPController: pvp_controller
+```
+
+## After Rubocop::Inflector
+
+All you have to do is define 1 concise rule. You can also share this rule with your application itself. (e.g. Rails)
+
+```ruby
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.acronym 'PvP'
+end
+```
+
 ## Installation
 
 Just install the `rubocop-inflector` gem
@@ -45,6 +69,12 @@ require:
 ```
 
 Now you can run `rubocop` and it will automatically integrate ActiveSupport Integration
+
+## Supported Cops and Logics
+
+Following cops and logics are now supported.
+
+* `RSpec/FilePath`
 
 ## Development
 
