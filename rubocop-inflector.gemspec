@@ -7,12 +7,12 @@ require 'rubocop/inflector/version'
 Gem::Specification.new do |spec|
   spec.name          = 'rubocop-inflector'
   spec.version       = RuboCop::Inflector::VERSION
-  spec.authors       = ['Takumasa Ochi']
-  spec.email         = ['aeroastro007@gmail.com']
+  spec.authors       = ['Takumasa Ochi', 'Dylan Rainwater']
+  spec.email         = ['aeroastro007@gmail.com', 'support@splitwise.com']
 
   spec.summary       = 'RuboCop extension to integrate ActiveSupport::Inflector'
   spec.description   = 'RuboCop extension to integrate ActiveSupport::Inflector'
-  spec.homepage      = 'https://github.com/aeroastro/rubocop-inflector'
+  spec.homepage      = 'https://github.com/splitwise/rubocop-inflector'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
