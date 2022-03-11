@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'RuboCop extension to integrate ActiveSupport::Inflector'
   spec.description   = 'RuboCop extension to integrate ActiveSupport::Inflector'
-  spec.homepage      = 'https://github.com/splitwise/rubocop-inflector'
+  spec.homepage      = 'https://github.com/aeroastro/rubocop-inflector'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.3'
+  spec.required_ruby_version = ['>= 2.3', '< 4']
 
   spec.add_dependency 'activesupport'
   spec.add_dependency 'rubocop'
