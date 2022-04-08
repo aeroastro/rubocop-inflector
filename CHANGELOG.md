@@ -8,6 +8,8 @@
 
 ### Changes
 
+* Widen required_ruby_version to be compatible with Ruby 3 ([Dylan Rainwater](@dylanrainwater), [Joe Stein](@jas14))
+
 ## 0.1.1 (2018-02-12)
 
 ### Changes
