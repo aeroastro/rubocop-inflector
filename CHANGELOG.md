@@ -8,7 +8,11 @@
 
 ### Changes
 
-## 0.2.0 (2022-04-12)
+## 0.2.1 (2022-04-12)
+
+* Increment minor version respecting semantic versioning. No changes are included except version number. ([Takumasa Ochi](@aeroastro))
+
+## 0.1.2 (2022-04-12)
 
 ### Changes
 
