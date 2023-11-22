@@ -5,6 +5,7 @@ require 'bundler/setup'
 require 'rubocop-rspec'
 require 'rubocop-inflector'
 
+require 'rubocop/rspec/shared_contexts/default_rspec_language_config_context' # from rubocop-rspec
 require 'rubocop/rspec/support'
 
 if ENV['COVERAGE'] == 'true'
@@ -36,6 +37,8 @@ RSpec.configure do |config|
   config.raise_on_warning = true
 
   config.include(RuboCop::RSpec::ExpectOffense)
+
+  config.include_context 'with default RSpec/Language config', :config
 
   # Initialize ActiveSupport::Inflector
   config.before do
