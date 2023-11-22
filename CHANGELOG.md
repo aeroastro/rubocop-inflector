@@ -8,6 +8,8 @@
 
 ### Changes
 
+* Drop support for Ruby < 2.6 ([Ryo Maeda](@epaew))
+
 ## 0.2.1 (2022-04-12)
 
 * Increment minor version respecting semantic versioning. No changes are included except version number. ([Takumasa Ochi](@aeroastro))
