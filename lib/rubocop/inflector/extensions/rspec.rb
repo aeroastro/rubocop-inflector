@@ -12,10 +12,21 @@ module RuboCop
                 ActiveSupport::Inflector.underscore(string)
               end
             end
+
+            module SpecFilePathFormat
+              def camel_to_snake_case(string)
+                ActiveSupport::Inflector.underscore(string)
+              end
+            end
           end
         end
 
-        ::RuboCop::Cop::RSpec::FilePath.prepend Cop::RSpec::FilePath
+        if const_defined? '::RuboCop::Cop::RSpec::FilePath'
+          ::RuboCop::Cop::RSpec::FilePath.prepend Cop::RSpec::FilePath
+        end
+        if const_defined? '::RuboCop::Cop::RSpec::SpecFilePathFormat'
+          ::RuboCop::Cop::RSpec::SpecFilePathFormat.prepend Cop::RSpec::SpecFilePathFormat
+        end
       end
     end
   end

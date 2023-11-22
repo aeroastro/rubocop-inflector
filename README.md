@@ -75,6 +75,7 @@ Now you can run `rubocop` and it will automatically integrate ActiveSupport Inte
 Following cops and logics are now supported.
 
 * `RSpec/FilePath`
+* `RSpec/SpecFilePathFormat`
 
 ## Development
 
