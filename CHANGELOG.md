@@ -6,6 +6,8 @@
 
 ### Bug fixes
 
+* Fix failing tests with newer version of RuboCop RSpec ([Ryo Maeda](@epaew))
+
 ### Changes
 
 * Drop support for Ruby < 2.6 ([Ryo Maeda](@epaew))
