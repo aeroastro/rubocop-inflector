@@ -37,6 +37,6 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 3.1'
 
   spec.add_dependency 'activesupport'
-  spec.add_dependency 'rubocop', '<= 1.40'
+  spec.add_dependency 'rubocop'
   spec.add_dependency 'rubocop-rspec', '>= 2.24'
 end
