@@ -7,7 +7,7 @@ module RuboCop
         # Provides a extension on rubocop-rspec
         module Cop
           module RSpec
-            module FilePath
+            module SpecFilePathFormat
               def camel_to_snake_case(string)
                 ActiveSupport::Inflector.underscore(string)
               end
@@ -15,7 +15,7 @@ module RuboCop
           end
         end
 
-        ::RuboCop::Cop::RSpec::FilePath.prepend Cop::RSpec::FilePath
+        ::RuboCop::Cop::RSpec::SpecFilePathFormat.prepend Cop::RSpec::SpecFilePathFormat
       end
     end
   end

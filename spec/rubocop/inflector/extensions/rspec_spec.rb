@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
+require 'spec_helper'
+
 RSpec.describe RuboCop::Inflector::Extensions::RSpec do
-  describe RuboCop::Cop::RSpec::FilePath, :config do
+  describe RuboCop::Cop::RSpec::SpecFilePathFormat, :config do
     subject(:cop) { described_class.new(config) }
 
     context 'without ActiveSupport::Inflector config' do
@@ -17,6 +19,13 @@ RSpec.describe RuboCop::Inflector::Extensions::RSpec do
           describe Some::Class do; end
         RUBY
       end
+    end
+
+    it 'checks class specs without inflections' do
+      expect_offense(<<~RUBY, 'pvp/pvp_battles_controller_spec.rb')
+        describe PvP::PvPBattlesController do; end
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Spec path should end with `pv_p/pv_p_battles_controller*_spec.rb`.
+      RUBY
     end
 
     context 'with ActiveSupport::Inflector config' do

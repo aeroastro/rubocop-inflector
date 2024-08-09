@@ -2,6 +2,6 @@
 
 RSpec.describe RuboCop::Inflector do
   it 'has a version number' do
-    expect(RuboCop::Inflector::VERSION).not_to be nil
+    expect(RuboCop::Inflector::VERSION).not_to be_nil
   end
 end

@@ -42,3 +42,18 @@ RSpec.configure do |config|
     ActiveSupport::Inflector.inflections.clear
   end
 end
+require 'rubocop/rspec/shared_contexts/default_rspec_language_config_context'
+
+RSpec.configure do |config|
+  # Set metadata on all cop specs
+  config.define_derived_metadata(file_path: %r{/spec/rubocop/cop/}) do |meta|
+    meta[:type] = :cop_spec
+  end
+
+  # Include RuboCop's config shared context for all cop specs
+  config.define_derived_metadata(type: :cop_spec) do |meta|
+    meta[:config] = true
+  end
+
+  config.include_context 'with default RSpec/Language config', :config
+end
