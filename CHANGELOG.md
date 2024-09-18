@@ -4,6 +4,8 @@
 
 ### New features
 
+* Support `RSpec/SpecFilePathFormat` cop ([Ryo Maeda](@epaew))
+
 ### Bug fixes
 
 ### Changes
