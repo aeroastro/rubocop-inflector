@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: CodeSpell
-        uses: codespell-project/actions-codespell@master
+        uses: codespell-project/actions-codespell@v2
         with:
           check_filenames: true
           check_hidden: true
