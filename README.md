@@ -42,7 +42,7 @@ gem 'rubocop-inflector'
 ## Usage
 
 You need to tell RuboCop to load the Inflector extension and your custom ActiveSupport::Inflector rule.
-Custom rule file would be the followings. If you are using Rails, you can find it under `config` directory.
+Custom rule file would be the following. If you are using Rails, you can find it under `config` directory.
 
 ### Custom ActiveSupport::Inflector rule
 
