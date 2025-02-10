@@ -4,6 +4,14 @@
 
 ### New features
 
+### Bug fixes
+
+### Changes
+
+## 1.0.0 (2025-02-10)
+
+### New features
+
 * Support `RSpec/SpecFilePathFormat` cop ([Ryo Maeda](@epaew))
 
 ### Bug fixes
